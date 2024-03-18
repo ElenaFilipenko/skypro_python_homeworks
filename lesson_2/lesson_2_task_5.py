@@ -1,0 +1,15 @@
+def month_to_season (n):
+    n = int (n)
+    if n == 1 or n == 2 or n == 12:
+        print("Зима")
+    elif n == 3 or n == 4 or n == 5:
+        print("Весна")
+    elif n == 6 or n == 7 or n == 8:
+        print("Лето")
+    elif n == 9 or n == 10 or n == 11:
+        print("Осень")
+    else: 
+        print("Некорректное значение. Попробуйте еще раз!")
+
+n = input ("Введите порядковый номер месяца: ")
+month_to_season (n)
