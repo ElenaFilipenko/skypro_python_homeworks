@@ -1,11 +1,11 @@
-def bank (x, y):
-    x = int (x)
-    y = int (y)
-    for y in range (1, y+1):
-        x = x + x*0.1
-    return (round (x,2))
+def bank (sum, time):
+    sum = int (sum)
+    time = int (time)
+    for time in range (1, time+1):
+        sum = sum + sum*0.1
+    return (round (sum,2))
     
-x = input ("Введите сумму вклада: ")
-y = input ("Введите количество лет: ")
-bank (x, y)
-print (f'Сумма, которая будет на счету {bank (x, y)}')
+sum = input ("Введите сумму вклада: ")
+time = input ("Введите количество лет: ")
+bank (sum, time)
+print (f'Сумма, которая будет на счету {bank (sum, time)}')
